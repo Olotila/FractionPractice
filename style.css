@@ -1,0 +1,15 @@
+body {
+}
+
+.f {
+    display: inline-block;
+    width: 1em;
+}
+.n {
+    text-align: center;
+    border-bottom: 1px solid black; 
+}
+
+.d {
+    text-align: center;
+}
