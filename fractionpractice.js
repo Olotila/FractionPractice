@@ -9,9 +9,10 @@ function randomForFraction(max) {
 /* funktio, joka tutkii onko vastaus yhden desimaalin tarkkuudella oikein 
 jos vastaus on 1 desimaalin tarkkuudella oikein niin lisää putkea yhdellä
 
-if vastaus == Math.round(oikein * 10) / 10
+if (vastaus == Math.round(oikein * 10) / 10) {
 putki++
-else putki=0
+}
+else {putki=0;}
 
 
 */
@@ -29,6 +30,7 @@ const nimElem = document.getElementById("nimittaja");
 
 const osoittaja = randomForFraction(9);
 const nimittaja = randomForFraction(9);
+const putki = 0;
 
 osoiElem.innerHTML = osoittaja;
 nimElem.innerHTML = nimittaja;
