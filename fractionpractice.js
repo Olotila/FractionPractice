@@ -6,22 +6,22 @@ function randomForFraction(max) {
     return randomInt(max) + 1;
 }
 
-const nomElem = document.getElementById("nom");
-const divElem = document.getElementById("div");
+const osoiElem = document.getElementById("osoittaja");
+const nimElem = document.getElementById("nimittaja");
 
-const nom = randomForFraction(9);
-const div = randomForFraction(9);
+const osoittaja = randomForFraction(9);
+const nimittaja = randomForFraction(9);
 
-nomElem.innerHTML = nom;
-divElem.innerHTML = div;
+osoiElem.innerHTML = osoittaja;
+nimElem.innerHTML = nimittaja;
 
-const answerElem = document.getElementById("answer");
-const feedbackElem = document.getElementById("feedback");
-const resultElem = document.getElementById("result");
+const vastausElem = document.getElementById("vastaus");
+const palauteElem = document.getElementById("palaute");
+const tulosElem = document.getElementById("tulos");
 
-answerElem.onchange = function() {
-    feedbackElem.innerHTML = answerElem.value;
+vastausElem.onchange = function() {
+    palauteElem.innerHTML = vastausElem.value;
 
-    const correct = nom / div;
-    resultElem.innerHTML = correct;
+    const oikein = osoittaja / nimittaja;
+    tulosElem.innerHTML = oikein;
 };
