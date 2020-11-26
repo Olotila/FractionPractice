@@ -6,6 +6,22 @@ function randomForFraction(max) {
     return randomInt(max) + 1;
 }
 
+/* funktio, joka tutkii onko vastaus yhden desimaalin tarkkuudella oikein 
+jos vastaus on 1 desimaalin tarkkuudella oikein niin lisää putkea yhdellä
+
+Math.round(oikein * 10) / 10
+
+
+*/
+
+/* 
+
+
+
+*/
+
+
+
 const osoiElem = document.getElementById("osoittaja");
 const nimElem = document.getElementById("nimittaja");
 
