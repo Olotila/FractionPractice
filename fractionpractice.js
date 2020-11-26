@@ -9,7 +9,9 @@ function randomForFraction(max) {
 /* funktio, joka tutkii onko vastaus yhden desimaalin tarkkuudella oikein 
 jos vastaus on 1 desimaalin tarkkuudella oikein niin lisää putkea yhdellä
 
-Math.round(oikein * 10) / 10
+if vastaus == Math.round(oikein * 10) / 10
+putki++
+else putki=0
 
 
 */
