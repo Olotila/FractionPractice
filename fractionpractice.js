@@ -12,7 +12,9 @@ jos vastaus on 1 desimaalin tarkkuudella oikein niin lisää putkea yhdellä
 if (vastaus == Math.round(oikein * 10) / 10) {
 putki++
 }
-else {putki=0;}
+else {
+putki=0;
+}
 
 
 */
@@ -25,8 +27,10 @@ else {putki=0;}
 
 
 
-const osoiElem = document.getElementById("osoittaja");
+const osoiElem = document.getElementById("osoittaja");  // 
 const nimElem = document.getElementById("nimittaja");
+const putkiElem = document.getElementById("putki");
+
 
 const osoittaja = randomForFraction(9);
 const nimittaja = randomForFraction(9);
@@ -34,10 +38,12 @@ const putki = 0;
 
 osoiElem.innerHTML = osoittaja;
 nimElem.innerHTML = nimittaja;
+putkiElem.innerHTML = putki;
 
 const vastausElem = document.getElementById("vastaus");
 const palauteElem = document.getElementById("palaute");
 const tulosElem = document.getElementById("tulos");
+
 
 vastausElem.onchange = function() {
     palauteElem.innerHTML = vastausElem.value;
